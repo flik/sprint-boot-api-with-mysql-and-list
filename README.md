@@ -50,7 +50,7 @@ Open POSTMAN tool, select request type [GET for this usecase], specify the uri h
 
 ## This is what our REST API does:
 
-* GET request to /api/person/ returns a list of persons
+* GET request to /api/persons/ returns a list of persons
 * GET request to /api/person/1 returns the person with ID 1
 * POST request to /api/person/ with a person object as JSON creates a new person
 * PUT request to /api/person/3 with a person object as JSON updates the person with ID 3
