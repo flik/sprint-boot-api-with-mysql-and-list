@@ -11,6 +11,26 @@ It is very basic project to start sprint boot api
 * Tomcat 8.x.x
 * Mysql 5.x.x
 
+ Update resource file src/main/resources/application.properties with your mysql credentials
+```sql
+-- ----------------------------
+-- Table structure for `User`
+-- ----------------------------
+DROP TABLE IF EXISTS `User`;
+CREATE TABLE `User` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(191) DEFAULT '',
+  `email` varchar(191) DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of User
+-- ----------------------------
+INSERT INTO `User` VALUES ('1', 'saqi', 'saqi@gmail.com');
+INSERT INTO `User` VALUES ('2', 'ffk', 'ffk@gm.com');
+```
+## Note: you have to stop tomcat and free port 8080 to start this project. It will auto start tomcat and pond port 8080
 ## run the command from project root:
 mvn clean package
 
@@ -21,7 +41,7 @@ java -jar path-to-jar
 
 ## Retrieve all Persons
 
-Open POSTMAN tool, select request type [GET for this usecase], specify the uri http://localhost:8080/api/person/ and Send., should retrieve all Persons.
+Open POSTMAN tool, select request type [GET for this usecase], specify the uri http://localhost:8080/api/persons/ and Send., should retrieve all Persons.
 
 ## Retrieve all users
 
