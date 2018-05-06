@@ -34,10 +34,10 @@ mysql> FLUSH PRIVILEGES;
 ## CREATE TABLE IN DB:
 ```sql
 -- ----------------------------
--- Table structure for `User`
+-- Table structure for `user`
 -- ----------------------------
-DROP TABLE IF EXISTS `User`;
-CREATE TABLE `User` (
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(191) DEFAULT '',
   `email` varchar(191) DEFAULT '',
@@ -45,10 +45,10 @@ CREATE TABLE `User` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
--- Records of User
+-- Records of user
 -- ----------------------------
-INSERT INTO `User` VALUES ('1', 'saqi', 'saqi@gmail.com');
-INSERT INTO `User` VALUES ('2', 'ffk', 'ffk@gm.com');
+INSERT INTO `user` VALUES ('1', 'saqi', 'saqi@gmail.com');
+INSERT INTO `user` VALUES ('2', 'ffk', 'ffk@gm.com');
 ```
 ## Note: 
 you have to stop tomcat and free port 8080 to start this project. It will auto start tomcat and bound port 8080
