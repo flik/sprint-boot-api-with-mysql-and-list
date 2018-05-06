@@ -68,6 +68,9 @@ Open POSTMAN tool, select request type [GET for this usecase], specify the uri h
 
 Open POSTMAN tool, select request type [GET for this usecase], specify the uri http://localhost:8080/all/ and Send., should retrieve all users.
 
+# Note: 
+Use POST, specify the content in body, select content-type as ‘application/json’
+
 ## This is what our REST API does:
 
 * GET request to /api/persons/ returns a list of persons
