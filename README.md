@@ -30,7 +30,8 @@ CREATE TABLE `User` (
 INSERT INTO `User` VALUES ('1', 'saqi', 'saqi@gmail.com');
 INSERT INTO `User` VALUES ('2', 'ffk', 'ffk@gm.com');
 ```
-## Note: you have to stop tomcat and free port 8080 to start this project. It will auto start tomcat and pond port 8080
+## Note: 
+you have to stop tomcat and free port 8080 to start this project. It will auto start tomcat and bound port 8080
 ## run the command from project root:
 mvn clean package
 
