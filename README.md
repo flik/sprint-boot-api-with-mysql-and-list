@@ -67,6 +67,7 @@ Open POSTMAN tool, select request type [GET for this usecase], specify the uri h
 ## Retrieve all users
 
 Open POSTMAN tool, select request type [GET for this usecase], specify the uri http://localhost:8080/all/ and Send., should retrieve all users.
+$ curl 'localhost:8080/add?name=First&email=someemail@someemailprovider.com'
 
 # Note: 
 Use POST, specify the content in body, select content-type as ‘application/json’
